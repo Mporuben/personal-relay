@@ -18,7 +18,6 @@ export class TwilioService {
   async readMessages() {
     this.logger.log('Reading messages');
     try {
-
     } catch (error) {
       this.logger.error('Error reading messages', error);
     }

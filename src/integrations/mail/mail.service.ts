@@ -5,11 +5,11 @@ import { OnEvent } from '@nestjs/event-emitter';
 import { MessageEvent } from '../../events/Message';
 import { getConfig } from '../../config/config';
 
-const config= getConfig()
+const config = getConfig();
 @Injectable()
 export class MailService {
   private readonly logger = new Logger(MailService.name);
-  constructor(private readonly mailerService: MailerService,) {}
+  constructor(private readonly mailerService: MailerService) {}
 
   async sendMail() {}
   @OnEvent(getConfig().integrations.mail.listener.on)

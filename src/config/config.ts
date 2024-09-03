@@ -33,10 +33,13 @@ interface Config {
       password: string;
       listener: Listener;
     };
+    discord: {
+      username: string;
+      webhook: string;
+      listener: Listener;
+    };
   };
 }
-
-
 
 interface Listener {
   on: string;
