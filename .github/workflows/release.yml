@@ -20,5 +20,5 @@ jobs:
 
       - name: Push image to registry
         run: |
-          IMAGE_ID=ghcr.io/Mporuben/personal-relay:latest
+          IMAGE_ID=ghcr.io/mporuben/personal-relay:latest
           docker push $IMAGE_ID
